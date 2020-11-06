@@ -1,0 +1,18 @@
+<section class="page-section" id="{{ site.data.features.section | default: "features" }}">
+  <div class="strip">
+    <div class="container pt-6 pb-6 pb-md-10">
+      <div class="row justify-content-start">
+        {% for feature in site.data.features.list %}
+        <div class="col-12 col-md-4 mb-1">
+          <div class="feature feature-summary">
+            <div class="feature-content">
+              <h2 class="feature-title">{{ feature.title }}</h2>
+              <p>{{ feature.content | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

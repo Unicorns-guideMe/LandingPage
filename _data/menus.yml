@@ -1,0 +1,10 @@
+main:
+  - name: "Features"
+    section: features
+    weight: 2
+  - name: "Benefits"
+    section: benefits
+    weight: 4
+  - name: "Contact"
+    section: contact
+    weight: 6

@@ -1,0 +1,21 @@
+<section class="page-section" id="{{ site.data.benefits.section | default: "benefits" }}">
+<div class="strip strip-grey">
+    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+
+        {% for benefit in site.data.benefits.list %}
+        <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="benefit">
+            {% if benefit.image %}
+            <div class="benefit-image"><img alt="{{ benefit.title }} logo" src="{{ benefit.image | relative_url }}" /></div>
+            {% endif %}
+            <h2 class="benefit-title">{{ benefit.title }}</h2>
+            <div class="benefit-content">{{ benefit.description }}</div>
+        </div>
+        </div>
+        {% endfor %}
+
+    </div>
+    </div>
+</div>
+</section>

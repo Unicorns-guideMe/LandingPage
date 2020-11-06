@@ -1,0 +1,10 @@
+<div id="main-menu" class="main-menu">
+  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  <ul>
+    {% for item in mainmenu %}
+    <li>
+      <a href="#{{ item.section }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
