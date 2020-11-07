@@ -1,5 +1,4 @@
-url: 'https://unicorns-guideme.github.io/LandingPage/'
-baseurl: ''
+baseurl: '/LandingPage'
 exclude: ['README.md']
 permalink: pretty
 title: 'GuideMe'
