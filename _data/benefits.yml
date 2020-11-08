@@ -1,12 +1,12 @@
 section: benefits
-title: Benefits
+title: What you get
 list:
-    - title: "Free Consultation"
-      description: "New clients recieve an obligation free consultation."
-      image: "images/benefits/noun_branding_1885335.svg"
-    - title: "Certified Accountants"
-      description: "All members of our team are certified accountants."
-      image: "images/benefits/noun_The Process_1885341.svg"
-    - title: "Tax Compliance"
-      description: "We stay up to date on the latest changes to the tax code."
-      image: "images/benefits/noun_3d modeling_1885342.svg"
+    - title: "Quality content"
+      description: "Resources are reviewed by other people by the impact on their learning experience. This assures higher relevance."
+      image: "images/benefits/dark_like.svg"
+    - title: "Quick learning"
+      description: "Quality content is provided for a better learning experience, saving you from the hassle of trying to study using bad quality resources."
+      image: "images/benefits/clock.svg"
+    - title: "Varied content"
+      description: "The content provided is selected from various sources from the Internet, it is not limited to what a single platform or service provides."
+      image: "images/benefits/tree.svg"

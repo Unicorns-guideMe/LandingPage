@@ -1,12 +1,8 @@
 <section class="page-section" id="{{ site.data.features.section | default: features }}">
-
-    <div class="container pb-6 pb-md-10">
-
-        <div class="row justify-content-center">
-            <div class="col col-lg-8 text-center">
-              <h1 style="text-align:center; font-size:50px" class="section-heading text-uppercase">{{site.data.features.features.title}}</h1>
-              </br>
-              </br>
+  <div class="container">
+        <div class="row justify-content-center pb-3 pt-3">
+            <div class="col col-lg-12 text-center">
+              <h1 class="section-title text-uppercase">{{site.data.features.features.title}}</h1>
             </div>
         </div>
       
@@ -16,41 +12,25 @@
             </div>
 
             <div class="col-lg-5 text-justify">
-              </br>
-              </br>
               <h2 class="section-heading text-uppercase">{{ site.data.features.features.feature1.title }}</h2>
               <p>{{ site.data.features.features.feature1.content }}</p>
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-lg-5 text-justify">
-              </br>
-              </br>
-              </br>
-              </br>
+            <div class="col-lg-5 text-justify pt-5">
               <h2 class="section-heading text-uppercase">{{ site.data.features.features.feature2.title }}</h2>
               <p>{{ site.data.features.features.feature2.content }}</p>
             </div>
 
-            <div class="col col-lg-3 text-right">
+            <div class="col col-lg-3">
               <img src={{site.data.features.features.feature2.image}} width=100% alt="Data organization"/>
             </div>
         </div>
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-5 pb-5">
             <div class="col col-lg-2 text-center">
-              </br>
               <img src={{site.data.features.features.feature3.image}} width=100% alt="Data organization"/>
-            </div>
-
-            <div class="col col-lg-1 text-center">
             </div>
 
             <div class="col-lg-5 text-justify">
@@ -58,5 +38,5 @@
               <p>{{ site.data.features.features.feature3.content }}</p>
             </div>
         </div>
-    </div>
+  </div>
 </section>
