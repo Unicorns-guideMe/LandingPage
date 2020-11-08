@@ -1,15 +1,15 @@
-section: features
-list:
-  - title: Accounting
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter. Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  - title: Tax Preperation
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter. Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter. Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  - title: Business Advisory
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter. Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  - title: Superannuation
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  - title: Business Sales
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter. Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  - title: Mergers
-    content: Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit, clipeus fatetur, mira inter.
-  
+features:
+  section: features
+  title: Key features
+  feature1: 
+    title: Find what you need faster
+    content: Everytime you search for a subject, GuideMe will recommend the best resources based on other users reviews and the level of knowledge you have on that subject.
+    image: images/illustrations/search.png
+  feature2:
+    title: Save what is important
+    content: Make sure you don't lose the information that answers your questions and that you've finally found after hours of researching, by saving them in your journal stored in the cloud.
+    image: images/illustrations/note.png
+  feature3:
+    title: Organize your resources
+    content: Avoid the 23-opened-tabs-at-once situations by creating a folder for your studying sessions. Add links, name them and note them so later you will know why they are valuable. Future you will appeciate this!
+    image: images/illustrations/folder.png

@@ -1,18 +1,62 @@
-<section class="page-section" id="{{ site.data.features.section | default: "features" }}">
-  <div class="strip">
-    <div class="container pt-6 pb-6 pb-md-10">
-      <div class="row justify-content-start">
-        {% for feature in site.data.features.list %}
-        <div class="col-12 col-md-4 mb-1">
-          <div class="feature feature-summary">
-            <div class="feature-content">
-              <h2 class="feature-title">{{ feature.title }}</h2>
-              <p>{{ feature.content | markdownify }}</p>
+<section class="page-section" id="{{ site.data.features.section | default: features }}">
+
+    <div class="container pb-6 pb-md-10">
+
+        <div class="row justify-content-center">
+            <div class="col col-lg-8 text-center">
+              <h1 style="text-align:center; font-size:50px" class="section-heading text-uppercase">{{site.data.features.features.title}}</h1>
+              </br>
+              </br>
             </div>
-          </div>
         </div>
-        {% endfor %}
-      </div>
+      
+        <div class="row justify-content-center">
+            <div class="col col-lg-3 text-center">
+              <img src={{site.data.features.features.feature1.image}} width=100% alt="Data organization"/>
+            </div>
+
+            <div class="col-lg-5 text-justify">
+              </br>
+              </br>
+              <h2 class="section-heading text-uppercase">{{ site.data.features.features.feature1.title }}</h2>
+              <p>{{ site.data.features.features.feature1.content }}</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-5 text-justify">
+              </br>
+              </br>
+              </br>
+              </br>
+              <h2 class="section-heading text-uppercase">{{ site.data.features.features.feature2.title }}</h2>
+              <p>{{ site.data.features.features.feature2.content }}</p>
+            </div>
+
+            <div class="col col-lg-3 text-right">
+              <img src={{site.data.features.features.feature2.image}} width=100% alt="Data organization"/>
+            </div>
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+
+        <div class="row justify-content-center">
+            <div class="col col-lg-2 text-center">
+              </br>
+              <img src={{site.data.features.features.feature3.image}} width=100% alt="Data organization"/>
+            </div>
+
+            <div class="col col-lg-1 text-center">
+            </div>
+
+            <div class="col-lg-5 text-justify">
+              <h2 class="section-heading text-uppercase">{{ site.data.features.features.feature3.title }}</h2>
+              <p>{{ site.data.features.features.feature3.content }}</p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
