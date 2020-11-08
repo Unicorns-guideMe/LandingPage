@@ -1,12 +1,12 @@
 ---
-title: Jekyll Serif Theme
+title: GuideMe
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
-intro_image: "images/illustrations/pointing.svg"
+description: GuideMe is the learning assistant that helps you keep your most important notes at hand, and brings content vetted by other learners closer.
+intro_image: "images/illustrations/Lighthouse.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# GuideMe - The Lighthouse of Learning.
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+GuideMe is the learning assistant that helps you keep your most important notes at hand, and brings content vetted by other learners closer.
