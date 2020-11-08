@@ -5,20 +5,17 @@ title: 'GuideMe'
 
 google_analytics_id: ""
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  desktop: "images/logo/logo.svg"
+  mobile: "images/favicon.ico"
+  desktop: "images/favicon.ico"
   desktop_height: "36px"
 footer:
   copyright_text: 'GuideMe © 2020'
 
 seo:
-  meta_og_title: "Jekyll Serif Theme"
+  meta_og_title: "GuideMe - The lighthouse of learning."
+  meta_og_image: images/landingpage_screenshot.png
   meta_og_type: "website"
-  meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
-  meta_og_description: "Jekyll Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
-  meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+  meta_og_description: "GuideMe is a learning assistant. It aids your learning journeys, recommending you the best path based on your level, while also helping you organize information. Let us guide you to a more knowledgeable self."
 
 sass:
   indentWidth: 4
