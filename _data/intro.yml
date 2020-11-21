@@ -1,3 +1,7 @@
 section: intro
 email: 'unicorns.guideme@gmail.com'
 contact_button_link: 'contact'
+list:
+    - title: "keep the most important notes at hand"
+    - title: "receive content vetted by other learners"
+    - title: "organize your information"

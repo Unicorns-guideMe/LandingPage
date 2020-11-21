@@ -4,7 +4,6 @@
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  overflow: hidden;
   @include media-breakpoint-up(md) {
     padding-top: 140px;
   }
@@ -14,7 +13,7 @@
     font-weight: bold;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
-      width: 80%;
+      width: 100%;
       font-size: 48px;
     }
     @include media-breakpoint-up(lg) {
@@ -22,7 +21,7 @@
     }
   }
   h2 {
-    width: 80%;
+    width: 100%;
     font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 30px;
@@ -35,7 +34,7 @@
     line-height: 1.5;
     color: $steel;
     @include media-breakpoint-up(md) {
-      width: 80%;
+      width: 100%;
     }
   }
 }
@@ -44,3 +43,47 @@
   padding-top: 100px;
   padding-bottom: 30px;
 }
+
+// Styling for the masthead
+header.masthead {
+  text-align: left;
+  color: white;
+  background-image: url("../../images/illustrations/Lighthouse.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+    .intro-lead-in {
+      font-size: 28px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+    .intro-heading {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 0px;
+    }
+    .intro-bullets {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 0px;
+    }
+  }
+  .btn-xl {
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: auto;
+    background-color: #3ad29f;
+  }
+}
+

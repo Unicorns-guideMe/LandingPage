@@ -8,5 +8,3 @@ intro_image_hide_on_mobile: true
 ---
 
 # GuideMe - The Lighthouse of Learning.
-
-GuideMe is the learning assistant that helps you keep your most important notes at hand, and brings content vetted by other learners closer.

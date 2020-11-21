@@ -1,19 +1,18 @@
 <section class="page-section" id="{{ site.data.intro.section | default: "intro" }}">
-    <div class="intro">
+    <header class="masthead">
         <div class="container">
-            <div class="row justify-content-start">
-            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-                {{ content }}
-                <a href="#" class="button" onclick="openForm()">
-                    Contact
+            <div class="intro-text" style="color:black">
+                <div class="intro-heading"> GuideMe </div>
+                <div class="intro-lead-in"> the lighthouse of learning </div>
+                <div class="intro-bullets">
+                    {% for benefit in site.data.intro.list %}    
+                        <p><span class="badge badge-pill badge-info" style="background-color: #4d8af0;"><i class="fas fa-chevron-right"></i> {{ benefit.title }}</span></p>
+                    {% endfor %}
+                </div>
+                <a href="#" class="button btn-xl" onclick="openForm()">
+                    Subscribe
                 </a>
             </div>
-            {% if page.intro_image %}
-            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-                <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image }}" />
-            </div>
-            {% endif %}
-            </div>
         </div>
-    </div>
+    </header>
 </section>

@@ -31,7 +31,7 @@ $sub-footer-text-color: $white;
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
 @import 'bootstrap/utilities/text';
-// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+@import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
 
 
 // Libraries
@@ -52,7 +52,6 @@ $sub-footer-text-color: $white;
 @import 'components/title';
 @import 'components/content';
 @import 'components/intro';
-@import 'components/intro-image';
 @import 'components/strip';
 @import 'components/benefit';
 @import 'components/social';
