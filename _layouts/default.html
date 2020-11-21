@@ -9,6 +9,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
   <link rel="stylesheet" href="assets/css/solid.min.css"/>
+  <link rel="stylesheet" href="assets/css/regular.min.css"/>
   {% if page.description %}
   <meta name="description" content="{{ page.description }}" />
   {% endif %}
@@ -25,7 +26,13 @@
   <div id="wrapper" class="wrapper">
     {{content}}
   </div>
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
-<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-<script src="assets/js/form.js"></script>
 </html>

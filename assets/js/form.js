@@ -1,64 +1,42 @@
-window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-formbutton("create", {
-    theme: "minimal",
-    action: "https://formspree.io/f/xgepybqv",
-    title: "Tell us what you think!",
-    buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
-    fields: [{
-        name: "name",
-        type: "text",
-        label: "Your Name",
-        required: true,
-    },
-    {
-        name: "email",
-        type: "email",
-        label: "Your Email",
-        required: true
-    },
-    {
-        name: "Message",
-        type: "textarea",
-        required: true
-    },
-    {
-        type: "submit"
-    }],
-    styles: {
-        button: {
-            "background": "#61b7cf",
-        },
-        title: {
-            "background": "#61b7cf",
-        },
-        textInput: {
-            "border": "1px inset black",
-            "border-radius": "5px"
-        },
-        emailInput: {
-            "border": "1px inset black",
-            "border-radius": "5px"
-        },
-        textareaInput: {
-            "border": "1px inset black",
-            "border-radius": "5px"
-        },
-        submitInput: {
-            "background": "#61b7cf",
-            "color": "white"
+$(document).ready(function() {
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            openForm();
         }
-    },
-    onResponse: function(ok, setStatus) {
-        if (ok) {
-          setStatus("Thanks for your feedback.");
-        } else {
-          setStatus("<span style='color:red'>There was a problem. We've been notified.</span>");
-        }
-    },
-});
+    };
+})
 
 function openForm() {
-    var btn = document.getElementById("formbutton-button");
-    btn.click();
+    $("#myModal").modal('show');
+    return false;
+}
+
+function sendForm() {
+    let email = document.getElementById("emailInput");
+    let hp = document.getElementsByName("_honey")[0].value;
+
+    if (hp === undefined || hp === "")
+    {
+        $.ajax({
+            url: "https://formsubmit.co/ajax/unicorns.guideme@gmail.com",
+            method: "POST",
+            data: {
+                email: email.value,
+            },
+            dataType: "json",
+            success: function(resp) {
+                if (resp.success === "true") {
+                    $("#myModal").modal('hide');
+                    email.value = "";
+                    $(".toast-success").toast('show');
+                }
+                else {
+                    console.log(resp);
+                    $(".toast-error").toast('show');
+                }
+            }
+        });
+    }
+
     return false;
 }
