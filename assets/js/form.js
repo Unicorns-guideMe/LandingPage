@@ -1,6 +1,9 @@
+let scrolledDown = false;
+
 $(document).ready(function() {
     window.onscroll = function(ev) {
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        if (!scrolledDown && (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            scrolledDown = true;
             openForm();
         }
     };
@@ -26,6 +29,7 @@ function sendForm() {
             dataType: "json",
             success: function(resp) {
                 if (resp.success === "true") {
+                    scrolledDown = true;
                     $("#myModal").modal('hide');
                     email.value = "";
                     $(".toast-success").toast('show');
