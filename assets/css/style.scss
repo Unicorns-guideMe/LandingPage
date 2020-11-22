@@ -3,11 +3,11 @@
 ---
 
 // Colors
-$primary: #61b7cf;
+$primary: #4D8AF0;
 $secondary: #6c757d;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #f1f7ff;
+$white-offset: #D4E3FF;
 $steel: #5C5A5A;
 
 // Links
@@ -71,7 +71,9 @@ body {
 }
 
 .section-title {
-  font-size: 40px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  font-size: 50px;
   font-weight: 790;
   margin: 0;
   text-align: center;

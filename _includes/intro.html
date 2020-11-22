@@ -1,12 +1,12 @@
 <section class="page-section" id="{{ site.data.intro.section | default: "intro" }}">
     <header class="masthead">
         <div class="container">
-            <div class="intro-text" style="color:black">
+            <div class="intro-text" >
                 <div class="intro-heading"> GuideMe </div>
                 <div class="intro-lead-in"> the lighthouse of learning </div>
                 <div class="intro-bullets">
                     {% for benefit in site.data.intro.list %}    
-                        <p><span class="badge badge-pill badge-info" style="background-color: #4d8af0;"><i class="fas fa-chevron-right"></i> {{ benefit.title }}</span></p>
+                        <p><span class="badge badge-pill badge-info" style="background-color: #7259F0;"><i class="fas fa-chevron-right"></i> {{ benefit.title }}</span></p>
                     {% endfor %}
                 </div>
                 <a href="#" class="button btn-xl" onclick="openForm()">

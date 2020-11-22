@@ -6,7 +6,9 @@
   background-color: white;
 }
 .strip-grey {
+  margin-top: 30px;
   background-color: $white-offset;
+  padding-bottom: 30px;
 }
 .strip-diagonal {
   transform: skewY(5deg);
