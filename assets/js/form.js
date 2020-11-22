@@ -29,6 +29,12 @@ function sendForm() {
             dataType: "json",
             success: function(resp) {
                 if (resp.success === "true") {
+                    /* Send event to Google Analytics. */
+                    gtag('event', 'submit', {
+                        'event_category': 'Forms',
+                        'event_label': 'Newsletter subscription'
+                    });
+
                     scrolledDown = true;
                     $("#myModal").modal('hide');
                     email.value = "";

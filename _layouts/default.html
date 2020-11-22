@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-23ZKDNZRPF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-23ZKDNZRPF');
+  </script>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,6 +30,7 @@
   <meta name="twitter:card" content="{{ site.seo.meta_twitter_card }}" />
   <meta name="twitter:site" content="{{ site.seo.meta_twitter_site }}" />
   <meta name="twitter:creator" content="{{ site.seo.meta_twitter_creator }}" />
+
 </head>
 <body class='page {{page.bodyClass}}'>
   <div id="wrapper" class="wrapper">
