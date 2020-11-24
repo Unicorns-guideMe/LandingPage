@@ -13,7 +13,7 @@ footer:
 
 seo:
   meta_og_title: "GuideMe - The lighthouse of learning."
-  meta_og_image: images/landingpage_screenshot.png
+  meta_og_image: https://raw.githubusercontent.com/Unicorns-guideMe/LandingPage/master/images/landingpage_screenshot.png
   meta_og_type: "website"
   meta_og_description: GuideMe is the learning assistant that helps you keep your most important notes at hand, and brings content vetted by other learners closer.
 
