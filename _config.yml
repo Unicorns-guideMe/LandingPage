@@ -15,7 +15,7 @@ seo:
   meta_og_title: "GuideMe - The lighthouse of learning."
   meta_og_image: images/landingpage_screenshot.png
   meta_og_type: "website"
-  meta_og_description: "GuideMe is a learning assistant. It aids your learning journeys, recommending you the best path based on your level, while also helping you organize information. Let us guide you to a more knowledgeable self."
+  meta_og_description: GuideMe is the learning assistant that helps you keep your most important notes at hand, and brings content vetted by other learners closer.
 
 sass:
   indentWidth: 4
