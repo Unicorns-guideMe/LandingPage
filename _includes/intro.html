@@ -1,16 +1,25 @@
 <section class="page-section" id="{{ site.data.intro.section | default: "intro" }}">
     <header class="masthead">
-        <div class="container">
+        <div class="container" style="display: grid;">
             <div class="intro-text" >
-                <div class="intro-heading"> GuideMe </div>
-                <div class="intro-lead-in"> the lighthouse of learning </div>
+                <div class="intro-heading">GuideMe</div>
+                <div class="intro-lead-in">the lighthouse of learning</div>
                 <div class="intro-bullets">
-                    {% for benefit in site.data.intro.list %}    
-                        <p><span class="badge badge-pill badge-info" style="background-color: #7259F0;"><i class="fas fa-chevron-right"></i> {{ benefit.title }}</span></p>
+                    {% for benefit in site.data.intro.list %}
+                        <p><span class="badge badge-pill badge-info"><i class="fas fa-chevron-right"></i> {{ benefit.title }}</span></p>
                     {% endfor %}
                 </div>
-                <a href="#" class="button btn-xl" onclick="openForm()">
-                    Subscribe
+                <div class="newsletter-intro-container">
+                    <p class="lead"><span class="badge badge-pill badge-info badge-catch-phrase"><i class="fas fa-chevron-down"></i> {{ site.data.intro.catch_phrase }}</span></p>
+                    <a href="#" class="button btn-xl" onclick="openForm()">
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center" style="margin-bottom: 50px;">
+                <a class="btn btn-primary btn-see-more" href="#features" style="margin-top: auto">
+                    <i class="fa fa-chevron-down" style="margin-top: 5px;"></i>
                 </a>
             </div>
         </div>

@@ -60,6 +60,12 @@ $sub-footer-text-color: $white;
 @import 'pages/home';
 @import 'pages/newsletter';
 
+html {
+  scroll-behavior: smooth;
+  min-width: 500px;
+  min-height: 750px;
+}
+
 body {
   font-size: 16px;
   line-height: 1.2;
