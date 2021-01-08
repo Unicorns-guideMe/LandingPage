@@ -1,0 +1,44 @@
+<section class="page-section" id="{{ site.data.steps.section | default: steps }}">
+  <div class="container">
+        <div class="row justify-content-center pb-4 pt-3">
+            <div class="col col-lg-12 text-center">
+              <h1 class="section-title text-uppercase">{{site.data.steps.title}}</h1>
+            </div>
+        </div>
+      
+        <div class="row justify-content-center">
+
+            <div class="col col-lg-5 col-md-3 col-sm-4 col-4 text-center">
+              <img src={{site.data.steps.image}} width=100% alt="Steps"/>
+            </div>
+
+            <div class="col-lg-7 col-md-8 col-sm-8 col-8">
+            	<ol class="text-justify">
+
+					<li>Click <a href={{site.data.steps.link}}>here</a> to download a ZIP of our extension.</li>
+
+					<li>Unzip the file.</li>
+					<li>For <b>Chrome</b>:
+						<ul style="list-style-type:disc; margin-top:8px;">
+							<li> Navigate to <b>chrome://extensions</b> </li>
+							<li> In the top right corner check <b>Developer mode</b> </li>
+							<li> In the top left corner, click <b>Load unpacked</b> </li>
+							<li> Select the unzipped folder from step 2 </li>
+						</ul>
+						For <b>Edge</b>:
+						<ul style="list-style-type:disc; margin-top:8px;">
+							<li> Navigate to <b>edge://extensions</b> </li>
+							<li> In the bottom left corner check <b>Developer mode</b> </li>
+							<li> In the top part of the page click <b>Load unpacked</b> </li>
+							<li> Select the unzipped folder from step 2 </li>
+						</ul>
+
+					</li>
+					<li>Start learning!</li>
+              	</ol>
+              	<br><br>
+            </div>
+        </div>
+       
+  </div>
+</section>

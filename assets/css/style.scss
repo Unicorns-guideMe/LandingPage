@@ -85,3 +85,19 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+ul li {
+  color: $steel;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+ol li {
+  color: $steel;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+li li {
+  margin-left: 2em;
+}
