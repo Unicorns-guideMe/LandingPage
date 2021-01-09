@@ -1,4 +1,4 @@
-let scrolledDown = false;
+let scrolledDown = true;
 
 $(document).ready(function() {
     window.onscroll = function(ev) {
